@@ -1,0 +1,403 @@
+/* Интеграция DaisyUI тем с кастомными стилями */
+
+/* VALENTINE THEME - Романтичная розовая тема */
+[data-theme="valentine"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(255, 105, 180, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(219, 112, 147, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(255, 20, 147, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(255, 182, 193, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #ff69b4 0%, #db7093 30%, #ff1493 60%, #ffb6c1 100%) !important;
+}
+
+[data-theme="valentine"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(255, 105, 180, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(219, 112, 147, 0.4) 0%, transparent 50%),
+        linear-gradient(135deg, #ff69b4 0%, #db7093 30%, #ff1493 60%, #ffb6c1 100%) !important;
+}
+
+[data-theme="valentine"] .main-title,
+[data-theme="valentine"] .section-title {
+    color: #881337 !important;
+    text-shadow: 2px 2px 15px rgba(136, 19, 55, 0.4) !important;
+}
+
+[data-theme="valentine"] .subtitle {
+    color: #9d174d !important;
+}
+
+[data-theme="valentine"] .poem-number {
+    background: linear-gradient(145deg, #ec4899, #be185d) !important;
+}
+
+/* CUPCAKE THEME - Тёплая жёлто-оранжевая тема */
+[data-theme="cupcake"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(255, 193, 7, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(255, 152, 0, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(255, 87, 34, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(255, 235, 59, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #ffc107 0%, #ff9800 30%, #ff5722 60%, #ffeb3b 100%) !important;
+}
+
+[data-theme="cupcake"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(255, 193, 7, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(255, 152, 0, 0.4) 0%, transparent 50%),
+        linear-gradient(135deg, #ffc107 0%, #ff9800 30%, #ff5722 60%, #ffeb3b 100%) !important;
+}
+
+[data-theme="cupcake"] .main-title,
+[data-theme="cupcake"] .section-title {
+    color: #78350f !important;
+    text-shadow: 2px 2px 15px rgba(120, 53, 15, 0.4) !important;
+}
+
+[data-theme="cupcake"] .subtitle {
+    color: #92400e !important;
+}
+
+[data-theme="cupcake"] .poem-number {
+    background: linear-gradient(145deg, #f59e0b, #d97706) !important;
+}
+
+/* LOFI THEME - Тёмная минималистичная тема */
+[data-theme="lofi"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(99, 102, 241, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(79, 70, 229, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(67, 56, 202, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(55, 48, 163, 0.2) 0%, transparent 50%),
+        linear-gradient(135deg, #0f0f23 0%, #16213e 30%, #1e293b 60%, #334155 100%) !important;
+}
+
+[data-theme="lofi"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(99, 102, 241, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(79, 70, 229, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #0f0f23 0%, #16213e 30%, #1e293b 60%, #334155 100%) !important;
+}
+
+[data-theme="lofi"] .main-title,
+[data-theme="lofi"] .section-title {
+    color: #f1f5f9 !important;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6) !important;
+}
+
+[data-theme="lofi"] .subtitle {
+    color: #cbd5e1 !important;
+}
+
+[data-theme="lofi"] .poem-number {
+    background: linear-gradient(145deg, #6366f1, #4f46e5) !important;
+}
+
+[data-theme="lofi"] .nav-btn {
+    color: rgba(241, 245, 249, 0.9) !important;
+}
+
+/* PASTEL THEME - Нежная голубая тема */
+[data-theme="pastel"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(14, 165, 233, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(37, 99, 235, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(147, 197, 253, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 30%, #bae6fd 60%, #7dd3fc 100%) !important;
+}
+
+[data-theme="pastel"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(14, 165, 233, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 30%, #bae6fd 60%, #7dd3fc 100%) !important;
+}
+
+[data-theme="pastel"] .main-title,
+[data-theme="pastel"] .section-title {
+    color: #0c4a6e !important;
+    text-shadow: 2px 2px 15px rgba(12, 74, 110, 0.4) !important;
+}
+
+[data-theme="pastel"] .subtitle {
+    color: #0369a1 !important;
+}
+
+[data-theme="pastel"] .poem-number {
+    background: linear-gradient(145deg, #0ea5e9, #0284c7) !important;
+}
+
+/* FANTASY THEME - Фиолетовая магическая тема */
+[data-theme="fantasy"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(139, 92, 246, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(124, 58, 237, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(109, 40, 217, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(196, 181, 253, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 30%, #d8b4fe 60%, #c084fc 100%) !important;
+}
+
+[data-theme="fantasy"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(139, 92, 246, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(124, 58, 237, 0.4) 0%, transparent 50%),
+        linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 30%, #d8b4fe 60%, #c084fc 100%) !important;
+}
+
+[data-theme="fantasy"] .main-title,
+[data-theme="fantasy"] .section-title {
+    color: #581c87 !important;
+    text-shadow: 2px 2px 15px rgba(88, 28, 135, 0.4) !important;
+}
+
+[data-theme="fantasy"] .subtitle {
+    color: #6b21a8 !important;
+}
+
+[data-theme="fantasy"] .poem-number {
+    background: linear-gradient(145deg, #8b5cf6, #7c3aed) !important;
+}
+
+/* SUNSET THEME - Оранжевая закатная тема */
+[data-theme="sunset"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(234, 88, 12, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(251, 146, 60, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(255, 87, 34, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(255, 183, 77, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #fed7aa 0%, #fdba74 30%, #fb923c 60%, #f97316 100%) !important;
+}
+
+[data-theme="sunset"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(234, 88, 12, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(251, 146, 60, 0.4) 0%, transparent 50%),
+        linear-gradient(135deg, #fed7aa 0%, #fdba74 30%, #fb923c 60%, #f97316 100%) !important;
+}
+
+[data-theme="sunset"] .main-title,
+[data-theme="sunset"] .section-title {
+    color: #9a3412 !important;
+    text-shadow: 2px 2px 15px rgba(154, 52, 18, 0.4) !important;
+}
+
+[data-theme="sunset"] .subtitle {
+    color: #c2410c !important;
+}
+
+[data-theme="sunset"] .poem-number {
+    background: linear-gradient(145deg, #ea580c, #dc2626) !important;
+}
+
+/* NIGHT THEME - Глубокая тёмная тема */
+[data-theme="night"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(56, 189, 248, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(14, 165, 233, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(2, 132, 199, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(30, 41, 59, 0.4) 0%, transparent 50%),
+        linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #334155 60%, #475569 100%) !important;
+}
+
+[data-theme="night"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(56, 189, 248, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(14, 165, 233, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #334155 60%, #475569 100%) !important;
+}
+
+[data-theme="night"] .main-title,
+[data-theme="night"] .section-title {
+    color: #f1f5f9 !important;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6) !important;
+}
+
+[data-theme="night"] .subtitle {
+    color: #cbd5e1 !important;
+}
+
+[data-theme="night"] .poem-number {
+    background: linear-gradient(145deg, #38bdf8, #0ea5e9) !important;
+}
+
+[data-theme="night"] .nav-btn {
+    color: rgba(241, 245, 249, 0.9) !important;
+}
+
+/* COFFEE THEME - Коричневая кофейная тема */
+[data-theme="coffee"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(245, 158, 11, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(217, 119, 6, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(180, 83, 9, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(254, 215, 170, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #78350f 0%, #92400e 30%, #a16207 60%, #ca8a04 100%) !important;
+}
+
+[data-theme="coffee"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(245, 158, 11, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(217, 119, 6, 0.4) 0%, transparent 50%),
+        linear-gradient(135deg, #78350f 0%, #92400e 30%, #a16207 60%, #ca8a04 100%) !important;
+}
+
+[data-theme="coffee"] .main-title,
+[data-theme="coffee"] .section-title {
+    color: #fef3c7 !important;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="coffee"] .subtitle {
+    color: #fed7aa !important;
+}
+
+[data-theme="coffee"] .poem-number {
+    background: linear-gradient(145deg, #f59e0b, #d97706) !important;
+}
+
+[data-theme="coffee"] .nav-btn {
+    color: rgba(254, 243, 199, 0.9) !important;
+}
+
+/* WINTER THEME - Холодная зимняя тема */
+[data-theme="winter"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(2, 132, 199, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(3, 105, 161, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(7, 89, 133, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(186, 230, 253, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 30%, #bae6fd 60%, #7dd3fc 100%) !important;
+}
+
+[data-theme="winter"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(2, 132, 199, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(3, 105, 161, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 30%, #bae6fd 60%, #7dd3fc 100%) !important;
+}
+
+[data-theme="winter"] .main-title,
+[data-theme="winter"] .section-title {
+    color: #0c4a6e !important;
+    text-shadow: 2px 2px 15px rgba(12, 74, 110, 0.4) !important;
+}
+
+[data-theme="winter"] .subtitle {
+    color: #0369a1 !important;
+}
+
+[data-theme="winter"] .poem-number {
+    background: linear-gradient(145deg, #0284c7, #0369a1) !important;
+}
+
+/* AUTUMN THEME - Осенняя тема */
+[data-theme="autumn"] body {
+    background: 
+        radial-gradient(ellipse at top left, rgba(249, 115, 22, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(234, 88, 12, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(194, 65, 12, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(254, 215, 170, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #fed7aa 0%, #fdba74 30%, #f97316 60%, #ea580c 100%) !important;
+}
+
+[data-theme="autumn"] .login-screen {
+    background: 
+        radial-gradient(ellipse at top left, rgba(249, 115, 22, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(234, 88, 12, 0.4) 0%, transparent 50%),
+        linear-gradient(135deg, #fed7aa 0%, #fdba74 30%, #f97316 60%, #ea580c 100%) !important;
+}
+
+[data-theme="autumn"] .main-title,
+[data-theme="autumn"] .section-title {
+    color: #9a3412 !important;
+    text-shadow: 2px 2px 15px rgba(154, 52, 18, 0.4) !important;
+}
+
+[data-theme="autumn"] .subtitle {
+    color: #c2410c !important;
+}
+
+[data-theme="autumn"] .poem-number {
+    background: linear-gradient(145deg, #ea580c, #dc2626) !important;
+}
+
+/* Общие стили для тёмных тем */
+[data-theme="lofi"] .theme-dropdown,
+[data-theme="night"] .theme-dropdown,
+[data-theme="coffee"] .theme-dropdown {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme="lofi"] .theme-option,
+[data-theme="night"] .theme-option,
+[data-theme="coffee"] .theme-option {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+[data-theme="lofi"] .theme-option:hover,
+[data-theme="night"] .theme-option:hover,
+[data-theme="coffee"] .theme-option:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Анимации для смены тем */
+.theme-transition {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Эффекты частиц для разных тем */
+[data-theme="valentine"] .particle::after {
+    content: "💕";
+}
+
+[data-theme="cupcake"] .particle::after {
+    content: "🧁";
+}
+
+[data-theme="lofi"] .particle::after {
+    content: "🌙";
+}
+
+[data-theme="pastel"] .particle::after {
+    content: "🌸";
+}
+
+[data-theme="fantasy"] .particle::after {
+    content: "✨";
+}
+
+[data-theme="sunset"] .particle::after {
+    content: "🌅";
+}
+
+[data-theme="night"] .particle::after {
+    content: "⭐";
+}
+
+[data-theme="coffee"] .particle::after {
+    content: "☕";
+}
+
+[data-theme="winter"] .particle::after {
+    content: "❄️";
+}
+
+[data-theme="autumn"] .particle::after {
+    content: "🍂";
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .theme-dropdown {
+        background: rgba(255, 255, 255, 0.95) !important;
+    }
+    
+    [data-theme="lofi"] .theme-dropdown,
+    [data-theme="night"] .theme-dropdown,
+    [data-theme="coffee"] .theme-dropdown {
+        background: rgba(0, 0, 0, 0.95) !important;
+    }
+} 

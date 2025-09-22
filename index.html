@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="romantic-pink">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альбом воспоминаний ♡</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="daisyui-themes.css">
+    <link rel="stylesheet" href="custom-themes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            daisyui: {
+                themes: [
+                    "valentine", "cupcake", "lofi", "pastel", "fantasy", 
+                    "wireframe", "cmyk", "autumn", "business", "acid", 
+                    "lemonade", "night", "coffee", "winter", "dim", "sunset"
+                ]
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Форма входа с паролем -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-particles">
+            <div class="login-particle login-particle-1">💖</div>
+            <div class="login-particle login-particle-2">✨</div>
+            <div class="login-particle login-particle-3">💫</div>
+            <div class="login-particle login-particle-4">🌟</div>
+            <div class="login-particle login-particle-5">💝</div>
+            <div class="login-particle login-particle-6">💕</div>
+        </div>
+        
+        <div class="login-container">
+            <div class="login-form">
+                <div class="login-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 4V6C15 7.66 13.66 9 12 9S9 7.66 9 6V4L3 7V9H21M20 18C20 19.11 19.11 20 18 20H6C4.89 20 4 19.11 4 18V11H20V18Z"/>
+                    </svg>
+                </div>
+                
+                <h1 class="login-title">Альбом воспоминаний</h1>
+                <p class="login-subtitle">Введите дату</p>
+                
+                <div class="login-input-group">
+                    <input type="password" id="passwordInput" class="login-input" placeholder="дд.мм.гггг" maxlength="10">
+                    <button type="button" id="loginBtn" class="login-btn">
+                        <span class="login-btn-text">Войти</span>
+                        <svg class="login-btn-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div id="errorMessage" class="login-error"></div>
+                
+                <div class="login-hearts">
+                    <span class="heart-1">💖</span>
+                    <span class="heart-2">💕</span>
+                    <span class="heart-3">💝</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной контент сайта -->
+    <div id="mainContent" class="main-content" style="display: none;">
+        <!-- Навигация -->
+        <nav class="navigation">
+            <button class="nav-btn active" data-target="home">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Главная</span>
+            </button>
+            <button class="nav-btn" data-target="photos">
+                <span class="nav-icon">📸</span>
+                <span class="nav-text">Фото</span>
+            </button>
+            <button class="nav-btn" data-target="videos">
+                <span class="nav-icon">🎬</span>
+                <span class="nav-text">Видео</span>
+            </button>
+            <button class="nav-btn" data-target="poems">
+                <span class="nav-icon">📝</span>
+                <span class="nav-text">Мысли автора</span>
+            </button>
+            <!-- 🔽 ДОБАВЛЕНА НОВАЯ КНОПКА РЯДОМ СО "СТИХИ" -->
+            <button class="nav-btn" data-target="thoughts">
+                <span class="nav-icon">💭</span>
+                <span class="nav-text">Стихи</span>
+            </button>
+            <!-- 🔼 -->
+
+            <div class="theme-selector">
+                <button id="themeBtn" class="nav-btn theme-btn" title="Сменить тему">
+                    <span class="nav-icon">🎨</span>
+                    <span class="nav-text">Тема</span>
+                </button>
+                <div id="themeDropdown" class="theme-dropdown">
+                    <div class="theme-options">
+                        <button class="theme-option" data-theme="romantic-pink">
+                            <span class="theme-preview romantic-pink-preview"></span>
+                            <span>💕 Романтично</span>
+                        </button>
+                        <button class="theme-option" data-theme="minimalist">
+                            <span class="theme-preview minimalist-preview"></span>
+                            <span>✨ Минимализм</span>
+                        </button>
+                        <button class="theme-option" data-theme="red-passion">
+                            <span class="theme-preview red-passion-preview"></span>
+                            <span>🔥 Страсть</span>
+                        </button>
+                        <button class="theme-option" data-theme="dark-elegant">
+                            <span class="theme-preview dark-elegant-preview"></span>
+                            <span>🌙 Элегантность</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button id="logoutBtn" class="nav-btn logout-btn" title="Выйти">
+                <span class="nav-icon">🚪</span>
+                <span class="nav-text">Выйти</span>
+            </button>
+        </nav>
+
+        <!-- Главная секция -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <!-- Floating particles -->
+                <div class="particles">
+                    <div class="particle particle-1">✨</div>
+                    <div class="particle particle-2">💫</div>
+                    <div class="particle particle-3">⭐</div>
+                    <div class="particle particle-4">✨</div>
+                    <div class="particle particle-5">💫</div>
+                    <div class="particle particle-6">⭐</div>
+                    <div class="particle particle-7">✨</div>
+                    <div class="particle particle-8">💫</div>
+                </div>
+                
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
+                </div>
+                
+                <div class="hero-content">
+                    <h1 class="main-title">Альбом воспоминаний</h1>
+                    <p class="subtitle">Коллекция моментов, чувств и воспоминаний</p>
+                    <div class="hearts">♡ ♡ ♡</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- фото нахуй -->
+        <section id="photos" class="section">
+            <div class="container">
+                <h2 class="section-title">Фотографии</h2>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="photos/Снимок экрана 2025-09-22 062722.png" alt="Фото" loading="lazy">
+                    </div>
+                    <div class="photo-item">
+                        <img src="photos/Снимок экрана 2025-09-22 062608.png" alt="Фото" loading="lazy">
+                    </div>
+                    <div class="photo-item">
+                        <img src="photos/IMG_0086.PNG" alt="Фото" loading="lazy">
+                    </div>
+                    <div class="photo-item">
+                        <img src="photos/Снимок экрана 2025-09-22 062615.png" alt="Фото" loading="lazy">
+                    </div>
+                    <!-- и таким образом, далее фото можно добавить -->
+                </div>
+            </div>
+        </section>
+
+        <!-- На нахуй видео -->
+        <section id="videos" class="section">
+            <div class="container">
+                <h2 class="section-title">Видео</h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <video controls preload="none" loading="lazy" data-src="">
+                            <source data-src="videos/IMG_0169.MP4" type="video/quicktime">
+                            <source data-src="videos/IMG_0169.MP4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="video-item">
+                        <video controls preload="none" loading="lazy" data-src="">
+                            <source data-src="videos/IMG_0170.MP4" type="video/quicktime">
+                            <source data-src="videos/IMG_0170.MP4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="video-item">
+                        <video controls preload="none" loading="lazy" data-src="">
+                            <source data-src="videos/IMG_0171.MP4" type="video/quicktime">
+                            <source data-src="videos/IMG_0171.MP4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <!-- и таким образом, далее видео добавить можна -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Стихи нахуй -->
+              <section id="poems" class="section">
+            <div class="container">
+            <h2 class="section-title">Мысли автора</h2>
+            <div class="poems-container">
+                <div class="poem">
+                    <div class="poem-number">1</div>
+                    <div class="poem-photo" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="photos/Снимок экрана 2025-09-22 055940.png" alt="Фото автора" loading="lazy" style="max-width:200px; border-radius:12px;">
+                    </div>
+                    <div class="poem-text">
+                        Сайт посвятил самой красивой девушке, которую знаю, у неё получаются ебейшие снимки и каждое сторис —
+                        наслаждение, как она умеет уловить это в кадр. Мне самому сложновато говорить о чувствах и эмоциях,
+                        но стараюсь показать это действиями. Каждый звонок — кайфую от голоса, от историй и твоих мыслей,
+                        хочется задарить цветами, была бы только возможность. Удивлён и вдохновлён твоему упорству и трудолюбию,
+                        умиляет добрая душа. Всегда рад за твои успехи и думаю, что достигнешь больших высот. Также могу сказать
+                        спасибо за советы и рекомендации — Акнур хуйни не скажет и говорила, что у нас схожий характер, 14 притягивает 14.
+                    </div>
+                </div>
+                <!-- и таким образом, далее стихи добавить можна -->
+            </div>
+
+        <section id="thoughts" class="section">
+            <div class="container flex flex-col items-center">
+            <h2 class="section-title">стихи</h2>
+            
+            <div class="thoughts-container w-full max-w-2xl">
+                <div class="thought">
+                <div class="thought-number">1</div>
+                <div class="thought-text">
+                    Как дела? Бескочнечная работа
+                    Развиваюсь, учусь иду вперед
+                    Иногда смотрю на твое фото 
+                    И улыбаюсь
+                    Как идиот.
+                </div>
+                </div>
+                <!-- Добавляйте новые мысли аналогично -->
+            </div>
+            </div>
+        </section>
+        <!-- 🔼 -->
+
+        <!-- Модальное окно для фото -->
+        <div id="photoModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <img id="modalImage" src="" alt="">
+                <div class="modal-navigation">
+                    <button id="prevPhoto" class="modal-nav-btn">‹</button>
+                    <button id="nextPhoto" class="modal-nav-btn">›</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Музыкальный плеер нахуй -->
+        <div class="music-player" id="musicPlayer">
+            <audio id="backgroundMusic" preload="metadata"></audio>
+            <button id="musicToggle" class="music-btn" title="Музыкальный плеер">
+                <div class="music-icon">
+                    <svg class="play-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg class="pause-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </div>
+                <div class="music-waves">
+                    <div class="wave wave-1"></div>
+                    <div class="wave wave-2"></div>
+                    <div class="wave wave-3"></div>
+                </div>
+            </button>
+            <div class="player-controls" id="playerControls">
+                <div class="track-info">
+                    <div class="track-title" id="trackTitle">Выберите трек</div>
+                    <div class="track-progress">
+                        <div class="progress-bar" id="progressBar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="time-display">
+                            <span id="currentTime">0:00</span>
+                            <span id="totalTime">0:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-buttons">
+                    <button id="prevTrack" class="control-btn" title="Предыдущий трек">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                        </svg>
+                    </button>
+                    <button id="playPause" class="control-btn main-control" title="Воспроизвести/Пауза">
+                        <svg class="play-btn" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-btn" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </button>
+                    <button id="nextTrack" class="control-btn" title="Следующий трек">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                        </svg>
+                    </button>
+                    <button id="shuffleBtn" class="control-btn" title="Перемешать">
+                        <svg viewBox="0 0 24 24" width="18" height="18">
+                            <path fill="currentColor" d="M14.83 13.41L13.42 14.82 16.55 17.95 14.5 20H20V14.5L17.96 16.54 14.83 13.41ZM14.5 4L16.54 6.04 4 18.59 5.41 20 17.96 7.46 20 9.5V4H14.5ZM10.59 9.17L5.41 4 4 5.41L9.17 10.58 10.59 9.17Z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="volume-control">
+                    <svg class="volume-icon" viewBox="0 0 24 24" width="20" height="20">
+                        <path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                    <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="60">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+/* 
+===================================================
+КАСТОМНЫЕ ТЕМЫ ДЛЯ АЛЬБОМА ЛЮБВИ
+===================================================
+1. Романтично розовый (по умолчанию)
+2. Стильный минимализм 
+3. Красно-сексуальный
+4. Темный стиль
+===================================================
+*/
+
+/* Импорт дополнительных шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* 
+===================================================
+1. РОМАНТИЧНО РОЗОВЫЙ (ТЕКУЩИЙ СТИЛЬ)
+===================================================
+*/
+
+[data-theme="romantic-pink"] {
+    --theme-primary: #ff6b9d;
+    --theme-secondary: #ffc3a0; 
+    --theme-accent: #ff8fab;
+    --theme-bg-start: #ff6b6b;
+    --theme-bg-end: #ffa0ac;
+    --theme-text: #ffffff;
+    --theme-text-soft: rgba(255, 255, 255, 0.9);
+    --theme-glass: rgba(255, 255, 255, 0.25);
+    --theme-glass-border: rgba(255, 255, 255, 0.3);
+    --theme-shadow: rgba(255, 107, 157, 0.3);
+    --theme-font-primary: 'Playfair Display', serif;
+    --theme-font-secondary: 'Inter', sans-serif;
+}
+
+[data-theme="romantic-pink"] body {
+    font-family: var(--theme-font-secondary);
+    background: 
+        radial-gradient(ellipse at top left, rgba(255, 107, 107, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(132, 94, 247, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center right, rgba(245, 101, 101, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at center left, rgba(254, 202, 202, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 60%, #f5576c 100%);
+}
+
+/* 
+===================================================
+2. СТИЛЬНЫЙ МИНИМАЛИЗМ
+===================================================
+*/
+
+[data-theme="minimalist"] {
+    --theme-primary: #2d3748;
+    --theme-secondary: #4a5568;
+    --theme-accent: #e2e8f0;
+    --theme-bg-start: #f7fafc;
+    --theme-bg-end: #edf2f7;
+    --theme-text: #1a202c;
+    --theme-text-soft: #4a5568;
+    --theme-glass: rgba(255, 255, 255, 0.8);
+    --theme-glass-border: rgba(226, 232, 240, 0.6);
+    --theme-shadow: rgba(45, 55, 72, 0.1);
+    --theme-font-primary: 'Space Grotesk', sans-serif;
+    --theme-font-secondary: 'Poppins', sans-serif;
+}
+
+[data-theme="minimalist"] body {
+    font-family: var(--theme-font-secondary);
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(247, 250, 252, 0.9) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(237, 242, 247, 0.9) 0%, transparent 50%),
+        linear-gradient(135deg, 
+            rgba(247, 250, 252, 0.98) 0%, 
+            rgba(237, 242, 247, 0.95) 50%,
+            rgba(226, 232, 240, 0.98) 100%);
+    color: var(--theme-text);
+}
+
+[data-theme="minimalist"] .main-title,
+[data-theme="minimalist"] .section-title {
+    font-family: var(--theme-font-primary);
+    background: linear-gradient(45deg, 
+        var(--theme-primary) 0%, 
+        var(--theme-secondary) 50%, 
+        var(--theme-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+[data-theme="minimalist"] .poem-text {
+    font-family: var(--theme-font-primary);
+    color: var(--theme-text-soft);
+    font-weight: 300;
+}
+
+[data-theme="minimalist"] .hero {
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(226, 232, 240, 0.3) 0%, transparent 70%),
+        radial-gradient(circle at 70% 70%, rgba(237, 242, 247, 0.3) 0%, transparent 70%),
+        linear-gradient(135deg, 
+            rgba(247, 250, 252, 0.95) 0%, 
+            rgba(237, 242, 247, 0.9) 50%,
+            rgba(226, 232, 240, 0.95) 100%);
+}
+
+[data-theme="minimalist"] #photos {
+    background: 
+        linear-gradient(135deg, 
+            rgba(247, 250, 252, 0.98) 0%, 
+            rgba(237, 242, 247, 0.95) 50%,
+            rgba(226, 232, 240, 0.98) 100%);
+}
+
+[data-theme="minimalist"] #videos {
+    background: 
+        linear-gradient(135deg, 
+            rgba(237, 242, 247, 0.98) 0%, 
+            rgba(226, 232, 240, 0.95) 50%,
+            rgba(203, 213, 224, 0.98) 100%);
+}
+
+[data-theme="minimalist"] #poems {
+    background: 
+        linear-gradient(135deg, 
+            rgba(226, 232, 240, 0.98) 0%, 
+            rgba(203, 213, 224, 0.95) 50%,
+            rgba(237, 242, 247, 0.98) 100%);
+}
+
+[data-theme="minimalist"] .subtitle {
+    color: var(--theme-text-soft);
+}
+
+[data-theme="minimalist"] .hearts {
+    color: var(--theme-secondary);
+}
+
+/* 
+===================================================
+3. КРАСНО-СЕКСУАЛЬНЫЙ
+===================================================
+*/
+
+[data-theme="red-passion"] {
+    --theme-primary: #dc2626;
+    --theme-secondary: #991b1b;
+    --theme-accent: #fecaca;
+    --theme-bg-start: #7f1d1d;
+    --theme-bg-end: #dc2626;
+    --theme-text: #ffffff;
+    --theme-text-soft: rgba(255, 255, 255, 0.9);
+    --theme-glass: rgba(220, 38, 38, 0.3);
+    --theme-glass-border: rgba(255, 255, 255, 0.3);
+    --theme-shadow: rgba(220, 38, 38, 0.4);
+    --theme-font-primary: 'Cormorant Garamond', serif;
+    --theme-font-secondary: 'Crimson Text', serif;
+}
+
+[data-theme="red-passion"] body {
+    font-family: var(--theme-font-secondary);
+    background: 
+        radial-gradient(ellipse at top left, rgba(220, 38, 38, 0.6) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(127, 29, 29, 0.6) 0%, transparent 50%),
+        radial-gradient(ellipse at center, rgba(153, 27, 27, 0.4) 0%, transparent 70%),
+        linear-gradient(135deg, 
+            rgba(127, 29, 29, 0.95) 0%, 
+            rgba(153, 27, 27, 0.9) 30%,
+            rgba(220, 38, 38, 0.95) 60%,
+            rgba(185, 28, 28, 0.98) 100%);
+    color: var(--theme-text);
+}
+
+[data-theme="red-passion"] .main-title,
+[data-theme="red-passion"] .section-title {
+    font-family: var(--theme-font-primary);
+    background: linear-gradient(45deg, 
+        #ffffff 0%, 
+        #fecaca 25%, 
+        #dc2626 50%, 
+        #fca5a5 75%, 
+        #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    font-style: italic;
+}
+
+[data-theme="red-passion"] .poem-text {
+    font-family: var(--theme-font-primary);
+    color: var(--theme-text-soft);
+    font-weight: 400;
+    font-style: italic;
+}
+
+[data-theme="red-passion"] .hero {
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(220, 38, 38, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 75% 25%, rgba(127, 29, 29, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 50% 75%, rgba(153, 27, 27, 0.3) 0%, transparent 50%),
+        conic-gradient(from 45deg at 50% 50%, 
+            rgba(220, 38, 38, 0.3) 0deg,
+            rgba(127, 29, 29, 0.3) 90deg,
+            rgba(185, 28, 28, 0.3) 180deg,
+            rgba(153, 27, 27, 0.3) 270deg,
+            rgba(220, 38, 38, 0.3) 360deg),
+        linear-gradient(135deg, 
+            rgba(127, 29, 29, 0.9) 0%, 
+            rgba(153, 27, 27, 0.85) 30%,
+            rgba(220, 38, 38, 0.9) 60%,
+            rgba(185, 28, 28, 0.95) 100%);
+}
+
+[data-theme="red-passion"] #photos {
+    background: 
+        radial-gradient(ellipse at top left, rgba(220, 38, 38, 0.5) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom right, rgba(127, 29, 29, 0.5) 0%, transparent 60%),
+        linear-gradient(135deg, 
+            rgba(127, 29, 29, 0.9) 0%, 
+            rgba(153, 27, 27, 0.85) 30%,
+            rgba(220, 38, 38, 0.9) 70%,
+            rgba(185, 28, 28, 0.95) 100%);
+}
+
+[data-theme="red-passion"] #videos {
+    background: 
+        linear-gradient(135deg, 
+            rgba(153, 27, 27, 0.95) 0%, 
+            rgba(127, 29, 29, 0.9) 30%,
+            rgba(185, 28, 28, 0.95) 70%,
+            rgba(220, 38, 38, 0.9) 100%);
+}
+
+[data-theme="red-passion"] #poems {
+    background: 
+        linear-gradient(135deg, 
+            rgba(185, 28, 28, 0.95) 0%, 
+            rgba(220, 38, 38, 0.9) 30%,
+            rgba(153, 27, 27, 0.95) 70%,
+            rgba(127, 29, 29, 0.9) 100%);
+}
+
+[data-theme="red-passion"] .subtitle {
+    color: var(--theme-text-soft);
+}
+
+[data-theme="red-passion"] .hearts {
+    color: var(--theme-accent);
+}
+
+/* 
+===================================================
+4. ТЕМНЫЙ СТИЛЬ
+===================================================
+*/
+
+[data-theme="dark-elegant"] {
+    --theme-primary: #8b5cf6;
+    --theme-secondary: #06b6d4;
+    --theme-accent: #f59e0b;
+    --theme-bg-start: #0f0f23;
+    --theme-bg-end: #1e1b4b;
+    --theme-text: #f8fafc;
+    --theme-text-soft: rgba(248, 250, 252, 0.8);
+    --theme-glass: rgba(15, 15, 35, 0.6);
+    --theme-glass-border: rgba(139, 92, 246, 0.3);
+    --theme-shadow: rgba(139, 92, 246, 0.2);
+    --theme-font-primary: 'Poppins', sans-serif;
+    --theme-font-secondary: 'Space Grotesk', sans-serif;
+}
+
+[data-theme="dark-elegant"] body {
+    font-family: var(--theme-font-secondary);
+    background: 
+        radial-gradient(ellipse at top left, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at top right, rgba(6, 182, 212, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at center, rgba(245, 158, 11, 0.1) 0%, transparent 70%),
+        radial-gradient(ellipse at bottom left, rgba(30, 27, 75, 0.8) 0%, transparent 50%),
+        linear-gradient(135deg, 
+            rgba(15, 15, 35, 0.98) 0%, 
+            rgba(30, 27, 75, 0.95) 30%,
+            rgba(67, 56, 202, 0.8) 60%,
+            rgba(15, 15, 35, 0.98) 100%);
+    color: var(--theme-text);
+}
+
+[data-theme="dark-elegant"] .main-title,
+[data-theme="dark-elegant"] .section-title {
+    font-family: var(--theme-font-primary);
+    background: linear-gradient(45deg, 
+        #f8fafc 0%, 
+        #8b5cf6 25%, 
+        #06b6d4 50%, 
+        #f59e0b 75%, 
+        #f8fafc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+[data-theme="dark-elegant"] .poem-text {
+    font-family: var(--theme-font-primary);
+    color: var(--theme-text-soft);
+    font-weight: 300;
+}
+
+[data-theme="dark-elegant"] .hero {
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 75% 25%, rgba(6, 182, 212, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 50% 75%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
+        conic-gradient(from 180deg at 50% 50%, 
+            rgba(139, 92, 246, 0.2) 0deg,
+            rgba(30, 27, 75, 0.3) 90deg,
+            rgba(6, 182, 212, 0.2) 180deg,
+            rgba(15, 15, 35, 0.3) 270deg,
+            rgba(139, 92, 246, 0.2) 360deg),
+        linear-gradient(135deg, 
+            rgba(15, 15, 35, 0.95) 0%, 
+            rgba(30, 27, 75, 0.9) 30%,
+            rgba(67, 56, 202, 0.7) 60%,
+            rgba(15, 15, 35, 0.95) 100%);
+}
+
+[data-theme="dark-elegant"] #photos {
+    background: 
+        radial-gradient(ellipse at top left, rgba(139, 92, 246, 0.25) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom right, rgba(6, 182, 212, 0.2) 0%, transparent 60%),
+        linear-gradient(135deg, 
+            rgba(15, 15, 35, 0.95) 0%, 
+            rgba(30, 27, 75, 0.9) 30%,
+            rgba(67, 56, 202, 0.8) 70%,
+            rgba(15, 15, 35, 0.95) 100%);
+}
+
+[data-theme="dark-elegant"] #videos {
+    background: 
+        linear-gradient(135deg, 
+            rgba(30, 27, 75, 0.95) 0%, 
+            rgba(15, 15, 35, 0.9) 30%,
+            rgba(67, 56, 202, 0.85) 70%,
+            rgba(30, 27, 75, 0.95) 100%);
+}
+
+[data-theme="dark-elegant"] #poems {
+    background: 
+        linear-gradient(135deg, 
+            rgba(67, 56, 202, 0.9) 0%, 
+            rgba(30, 27, 75, 0.95) 30%,
+            rgba(15, 15, 35, 0.95) 70%,
+            rgba(67, 56, 202, 0.85) 100%);
+}
+
+[data-theme="dark-elegant"] .subtitle {
+    color: var(--theme-text-soft);
+}
+
+[data-theme="dark-elegant"] .hearts {
+    color: var(--theme-accent);
+}
+
+/* 
+===================================================
+АДАПТАЦИЯ КОМПОНЕНТОВ ПОД НОВЫЕ ТЕМЫ
+===================================================
+*/
+
+/* Стеклянные эффекты для всех тем */
+[data-theme="minimalist"] .navigation,
+[data-theme="red-passion"] .navigation,
+[data-theme="dark-elegant"] .navigation {
+    background: var(--theme-glass);
+    border: 1px solid var(--theme-glass-border);
+    backdrop-filter: blur(25px) saturate(180%);
+}
+
+[data-theme="minimalist"] .nav-btn,
+[data-theme="red-passion"] .nav-btn,
+[data-theme="dark-elegant"] .nav-btn {
+    background: var(--theme-glass);
+    border: 1px solid var(--theme-glass-border);
+    color: var(--theme-text);
+}
+
+[data-theme="minimalist"] .nav-btn:hover,
+[data-theme="red-passion"] .nav-btn:hover,
+[data-theme="dark-elegant"] .nav-btn:hover,
+[data-theme="minimalist"] .nav-btn.active,
+[data-theme="red-passion"] .nav-btn.active,
+[data-theme="dark-elegant"] .nav-btn.active {
+    background: var(--theme-glass);
+    border-color: var(--theme-glass-border);
+    box-shadow: 0 15px 35px var(--theme-shadow);
+}
+
+/* Карточки и элементы */
+[data-theme="minimalist"] .photo-item,
+[data-theme="red-passion"] .photo-item,
+[data-theme="dark-elegant"] .photo-item {
+    background: var(--theme-glass);
+    border: 2px solid var(--theme-glass-border);
+    backdrop-filter: blur(20px) saturate(180%);
+}
+
+[data-theme="minimalist"] .poem,
+[data-theme="red-passion"] .poem,
+[data-theme="dark-elegant"] .poem {
+    background: var(--theme-glass);
+    border: 2px solid var(--theme-glass-border);
+    backdrop-filter: blur(25px) saturate(180%);
+}
+
+/* Модальные окна */
+[data-theme="minimalist"] .player-controls,
+[data-theme="red-passion"] .player-controls,
+[data-theme="dark-elegant"] .player-controls {
+    background: var(--theme-glass);
+    border: 1px solid var(--theme-glass-border);
+    backdrop-filter: blur(20px);
+}
+
+[data-theme="minimalist"] .theme-dropdown,
+[data-theme="red-passion"] .theme-dropdown,
+[data-theme="dark-elegant"] .theme-dropdown {
+    background: var(--theme-glass);
+    border: 1px solid var(--theme-glass-border);
+    backdrop-filter: blur(20px);
+}
+
+/* Музыкальный плеер */
+[data-theme="minimalist"] .music-btn,
+[data-theme="red-passion"] .music-btn,
+[data-theme="dark-elegant"] .music-btn {
+    background: var(--theme-glass);
+    border: 2px solid var(--theme-glass-border);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px var(--theme-shadow);
+}
+
+/* Форма входа */
+[data-theme="minimalist"] .login-form,
+[data-theme="red-passion"] .login-form,
+[data-theme="dark-elegant"] .login-form {
+    background: var(--theme-glass);
+    border: 2px solid var(--theme-glass-border);
+    backdrop-filter: blur(30px);
+}
+
+[data-theme="minimalist"] .login-title,
+[data-theme="red-passion"] .login-title,
+[data-theme="dark-elegant"] .login-title {
+    background: linear-gradient(45deg, 
+        var(--theme-primary) 0%, 
+        var(--theme-secondary) 50%, 
+        var(--theme-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="minimalist"] .login-input {
+    background: var(--theme-glass);
+    border: 2px solid var(--theme-glass-border);
+    color: var(--theme-text);
+}
+
+[data-theme="red-passion"] .login-input,
+[data-theme="dark-elegant"] .login-input {
+    background: var(--theme-glass);
+    border: 2px solid var(--theme-glass-border);
+    color: var(--theme-text);
+}
+
+[data-theme="minimalist"] .login-input::placeholder,
+[data-theme="red-passion"] .login-input::placeholder,
+[data-theme="dark-elegant"] .login-input::placeholder {
+    color: var(--theme-text-soft);
+}
+
+/* Переходы и анимации */
+[data-theme="minimalist"] *,
+[data-theme="red-passion"] *,
+[data-theme="dark-elegant"] * {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    [data-theme="minimalist"] .main-title,
+    [data-theme="red-passion"] .main-title,
+    [data-theme="dark-elegant"] .main-title {
+        font-size: 2rem;
+    }
+    
+    [data-theme="minimalist"] .section-title,
+    [data-theme="red-passion"] .section-title,
+    [data-theme="dark-elegant"] .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Тонкие настройки для каждой темы */
+
+/* Минимализм - чистые линии */
+[data-theme="minimalist"] .photo-item {
+    border-radius: 16px;
+}
+
+[data-theme="minimalist"] .poem {
+    border-radius: 20px;
+}
+
+[data-theme="minimalist"] .nav-btn {
+    border-radius: 12px;
+}
+
+/* Красная страсть - более мягкие формы */
+[data-theme="red-passion"] .photo-item {
+    border-radius: 24px;
+}
+
+[data-theme="red-passion"] .poem {
+    border-radius: 28px;
+}
+
+[data-theme="red-passion"] .nav-btn {
+    border-radius: 18px;
+}
+
+/* Темная элегантность - острые углы */
+[data-theme="dark-elegant"] .photo-item {
+    border-radius: 12px;
+}
+
+[data-theme="dark-elegant"] .poem {
+    border-radius: 16px;
+}
+
+[data-theme="dark-elegant"] .nav-btn {
+    border-radius: 10px;
+}
+
+/* 
+===================================================
+ПРЕДПРОСМОТР ТЕМ В ПЕРЕКЛЮЧАТЕЛЕ
+===================================================
+*/
+
+.romantic-pink-preview {
+    background: linear-gradient(135deg, #ff6b9d, #ffc3a0);
+    box-shadow: 0 0 10px rgba(255, 107, 157, 0.5);
+}
+
+.minimalist-preview {
+    background: linear-gradient(135deg, #f7fafc, #e2e8f0);
+    border: 1px solid #cbd5e0;
+}
+
+.red-passion-preview {
+    background: linear-gradient(135deg, #dc2626, #7f1d1d);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.6);
+}
+
+.dark-elegant-preview {
+    background: linear-gradient(135deg, #0f0f23, #8b5cf6);
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.4);
+}
